@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .msg {
+            display: grid;
+            grid-template-columns: 70%;
+            justify-content: end;
+            justify-items: end;
+        }
+
+        .msg-content {
+
+            font-size: 1.6rem;
+            padding: 9px 14px;
+            color: #fff;
+        }
+        .msg .msg-content {
+            background: #0048aa;
+            border: 1px solid #0048aa;
+            border-radius: 14px 14px 0 14px;
+        }
+        .msg-left {
+            display: grid;
+            grid-template-columns: 70%;
+            justify-content: start;
+            justify-items: start;
+        }
+        .msg-left .msg-content {
+            background: #ddd;
+            border: 1px solid #ddd;
+            color: #111;
+            border-radius: 14px 14px 14px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="msg">
+            <div class="msg-content">Hi, there</div>
+        </div>
+        <div class="msg-left">
+            <div class="msg-content">Hey, my friend</div>        
+        </div>
+        <div class="msg">
+            <div class="msg-content">
+                Yeah I think it's best we do that, otherwise things
+                won't work well at all. Im adding more text here to test 
+                the sizing of the speech bubble and the wrapping of it too.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
